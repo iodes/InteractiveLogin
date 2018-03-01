@@ -1,0 +1,13 @@
+*.suo
+*.dll
+*.sdf
+*.ide
+*.opensdf
+*.ipch
+*.user
+*.opendb
+*/bin
+*/obj
+/.vs
+/Debug
+/packages

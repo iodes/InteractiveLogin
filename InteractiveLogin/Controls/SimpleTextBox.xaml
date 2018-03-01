@@ -1,0 +1,72 @@
+﻿<UserControl
+    x:Class="InteractiveLogin.Controls.SimpleTextBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="300"
+    d:DesignWidth="300"
+    Focusable="True"
+    mc:Ignorable="d">
+
+    <UserControl.Resources>
+        <SolidColorBrush x:Key="Control.Foreground" Color="#FF44659F" />
+        <SolidColorBrush x:Key="Control.Line" Color="#FF44659F" />
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid Margin="20,0" VerticalAlignment="Center">
+            <Image
+                Width="20"
+                Height="20"
+                HorizontalAlignment="Left"
+                Cursor="Arrow"
+                Source="{Binding Icon}" />
+
+            <Grid
+                x:Name="gridHolder"
+                Margin="25,0,0,0"
+                x:FieldModifier="private"
+                Background="Transparent"
+                Cursor="IBeam">
+
+                <PasswordBox
+                    x:Name="passMain"
+                    x:FieldModifier="private"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    BorderThickness="0"
+                    CaretBrush="{StaticResource Control.Foreground}"
+                    FontSize="18"
+                    Foreground="{StaticResource Control.Foreground}"
+                    TextBlock.TextAlignment="Left" />
+
+                <TextBox
+                    x:Name="textMain"
+                    x:FieldModifier="private"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    BorderThickness="0"
+                    CaretBrush="{StaticResource Control.Foreground}"
+                    FontSize="18"
+                    Foreground="{StaticResource Control.Foreground}"
+                    TextAlignment="Left" />
+
+                <TextBlock
+                    x:Name="textHolder"
+                    x:FieldModifier="private"
+                    FontSize="18"
+                    Foreground="{StaticResource Control.Foreground}"
+                    Opacity="0.5"
+                    Text="{Binding PlaceHolder}"
+                    TextAlignment="Left" />
+            </Grid>
+        </Grid>
+
+        <Border
+            x:Name="borderLine"
+            BorderBrush="{StaticResource Control.Line}"
+            BorderThickness="3"
+            Opacity="0.8" />
+    </Grid>
+</UserControl>
