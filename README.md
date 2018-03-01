@@ -3,8 +3,11 @@
 Live2D Interactive Login Sample
 
 # Special Thanks
-* Darin(@dsenneff)
-* Steal(@SteaI)
+* [Darin(@dsenneff)](https://codepen.io/dsenneff/)
+* [Steal(@SteaI)](https://github.com/SteaI)
+
+# Guideline
+* [Live2D Model Guideline](http://sites.cybernoids.jp/cubism_e/samples/character_guideline)
 
 # Download
 Go To [Release](https://github.com/iodes/InteractiveLogin/releases) Page!
